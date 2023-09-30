@@ -13,6 +13,8 @@
 		A9187AAE2AC7EC8800866671 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9187AAD2AC7EC8800866671 /* Preview Assets.xcassets */; };
 		A9D189CF2AC7EF1B007135A1 /* CameraViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D189CE2AC7EF1B007135A1 /* CameraViewModel.swift */; };
 		A9D189D22AC7F2E8007135A1 /* DataScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D189D12AC7F2E8007135A1 /* DataScannerView.swift */; };
+		A9D189D42AC7FDB3007135A1 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D189D32AC7FDB3007135A1 /* MainView.swift */; };
+		A9D189D62AC7FFC4007135A1 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D189D52AC7FFC4007135A1 /* HeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		A9187AAD2AC7EC8800866671 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A9D189CE2AC7EF1B007135A1 /* CameraViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewModel.swift; sourceTree = "<group>"; };
 		A9D189D12AC7F2E8007135A1 /* DataScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataScannerView.swift; sourceTree = "<group>"; };
+		A9D189D32AC7FDB3007135A1 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		A9D189D52AC7FFC4007135A1 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,8 @@
 			isa = PBXGroup;
 			children = (
 				A9D189D12AC7F2E8007135A1 /* DataScannerView.swift */,
+				A9D189D32AC7FDB3007135A1 /* MainView.swift */,
+				A9D189D52AC7FFC4007135A1 /* HeaderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -160,8 +166,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9187AA92AC7EC8700866671 /* ContentView.swift in Sources */,
+				A9D189D62AC7FFC4007135A1 /* HeaderView.swift in Sources */,
 				A9187AA72AC7EC8700866671 /* SkanApp.swift in Sources */,
 				A9D189CF2AC7EF1B007135A1 /* CameraViewModel.swift in Sources */,
+				A9D189D42AC7FDB3007135A1 /* MainView.swift in Sources */,
 				A9D189D22AC7F2E8007135A1 /* DataScannerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

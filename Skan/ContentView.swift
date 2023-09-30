@@ -20,7 +20,7 @@ struct ContentView: View {
         case .cameraNotAvailable:
             Text("Camera not available")
         case .scannerAvailable:
-            Text("Scanner is available")
+            MainView(cameraViewModel: cameraViewModel)
         case .scannerNotAvailable:
             Text("Scanner not available")
         }
