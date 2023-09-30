@@ -41,7 +41,7 @@ class CameraViewModel: ObservableObject {
     
     var headerText: String {
         if recognizedItems.isEmpty {
-            return "Scanning: \(scanType.rawValue)"
+            return "Scanning \(scanType.rawValue)"
         } else {
             let recognizedItemsCount = recognizedItems.count
             return "Recognized \(recognizedItemsCount) " + ( recognizedItemsCount > 1 ? "items" : "item")
