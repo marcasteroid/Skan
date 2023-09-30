@@ -48,6 +48,16 @@ class CameraViewModel: ObservableObject {
         }
     }
     
+    var dataScannerViewId: Int {
+        var hasher = Hasher()
+        hasher.combine(scanType)
+        hasher.combine(recognizeMultipleItems)
+        if let textContentType {
+            hasher.combine(textContentType)
+        }
+        return hasher.finalize()
+    }
+    
     // Data camera access
     func requestDataScannerAccessStatus() async {
         guard UIImagePickerController.isSourceTypeAvailable(.camera) else {
