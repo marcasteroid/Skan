@@ -8,14 +8,22 @@
 import SwiftUI
 
 struct ContentView: View {
+    // MARK: - Properties
+    @EnvironmentObject var cameraViewModel: CameraViewModel
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        switch cameraViewModel.dataScannerAccessStatus {
+        case .notDetermined:
+            Text("Requesting camera access")
+        case .cameraAccessNotGranted:
+            Text("Access not granted")
+        case .cameraNotAvailable:
+            Text("Camera not available")
+        case .scannerAvailable:
+            Text("Scanner is available")
+        case .scannerNotAvailable:
+            Text("Scanner not available")
         }
-        .padding()
     }
 }
 

@@ -9,9 +9,15 @@ import SwiftUI
 
 @main
 struct SkanApp: App {
+    @StateObject private var cameraViewModel = CameraViewModel()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(cameraViewModel)
+                .task {
+                    await cameraViewModel.requestDataScannerAccessStatus()
+                }
         }
     }
 }
